@@ -2,7 +2,7 @@ class MapsController < ApplicationController
   # GET /maps
   # GET /maps.xml
   def index
-    @screen_name = "snus"
+    @screen_name = "onsen_lover"
     @count = 20 unless @count = params[:count]
 
     respond_to do |format|

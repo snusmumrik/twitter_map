@@ -1,7 +1,7 @@
 var user_timeline_url = "http://api.twitter.com/1/statuses/user_timeline.json";
 var default_latitude = "35.657003";
 var default_longitude = "139.696146";
-var default_zoom = 15;
+var default_zoom = 7;
 
 function initialize() {
 //  if (GBrowserIsCompatible()) {
