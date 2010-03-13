@@ -23,7 +23,7 @@
                                              [100, 100], 
                                              [200, 200]
                                             ],
-                                            params[:count]
+                                            @count.to_i
                                             )) %>
 
   <%= submit_tag("Search") %>
@@ -46,7 +46,7 @@ $(function(){
     $("input[name='commit']").click(function(){
         var screen_name = $("#screen_name").val();
         var count = $("#count").val();
-        if(count == 10){
+        if(count == 20){
           $("form[action='/#']").attr("action", "/" + screen_name);
         } else {
           $("form[action='/#']").attr("action", "/" + screen_name + "?count=" + count);
